@@ -70,7 +70,7 @@ def printResults(ord_books, sample=10):
     elif int(intputs[0]) == 5:
         size = input("Indique tamaño de la muestra: ")
         result = controller.sortBooks(catalog, int(size))
-        print("Para la muestra de", size, " elementos, el tiempo (mseg) es:"
+        print("Para la muestra de", size, " elementos, el tiempo (mseg) es:",
                                           str(result[0])))
         printResults(results[1])
 
