@@ -71,7 +71,7 @@ def printResults(ord_books, sample=10):
         size = input("Indique tamaño de la muestra: ")
         result = controller.sortBooks(catalog, int(size))
         print("Para la muestra de", size, " elementos, el tiempo (mseg) es:",
-                                          str(result[0])))
+                                          str(result[0]))
         printResults(results[1])
 
 def printAuthorData(author):
