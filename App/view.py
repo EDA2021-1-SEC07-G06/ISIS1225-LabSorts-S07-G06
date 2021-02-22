@@ -67,12 +67,12 @@ def printResults(ord_books, sample=10):
             book = lt.getElement(ord_books, i)
             print('Titulo: ' + book['title'] + ' ISBN: ' +
                   book['isbn'] + ' Rating: ' + book['average_rating'])
-    elif int(intputs[0]) == 5:
+    elif int(inputs[0]) == 5:
         size = input("Indique tamaño de la muestra: ")
         result = controller.sortBooks(catalog, int(size))
         print("Para la muestra de", size, " elementos, el tiempo (mseg) es:",
                                           str(result[0]))
-        printResults(results[1])
+        printResults(result[1])
 
 def printAuthorData(author):
     if author:
